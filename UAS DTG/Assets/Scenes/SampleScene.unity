@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 462922326}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,7 +177,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.02547197, y: -0.110379696}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -188,7 +188,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.72, y: 0.9}
+  m_Size: {x: 0.66905606, y: 1.1207592}
   m_EdgeRadius: 0
 --- !u!50 &462922322
 Rigidbody2D:
@@ -278,7 +278,7 @@ Transform:
   m_GameObject: {fileID: 462922320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -1.6, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -371,6 +371,7 @@ MonoBehaviour:
   terrainMask:
     serializedVersion: 2
     m_Bits: 64
+  currentChunk: {fileID: 0}
 --- !u!4 &1329360835
 Transform:
   m_ObjectHideFlags: 0
@@ -380,7 +381,7 @@ Transform:
   m_GameObject: {fileID: 1329360833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3130386, y: -0.79968715, z: -9.685366}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -423,7 +424,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -473,7 +474,7 @@ Transform:
   m_GameObject: {fileID: 1684755091}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -503,15 +504,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 666566442616624448, guid: 4f3ecc30f27e9394ea70eeda9bf3f060, type: 3}
       propertyPath: m_Name
-      value: Terrain Chunk
+      value: Terrain Chunk 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 866962293129543708, guid: 4f3ecc30f27e9394ea70eeda9bf3f060, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1742139730374631109, guid: 4f3ecc30f27e9394ea70eeda9bf3f060, type: 3}
       propertyPath: m_Size.x
-      value: 24.09481
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1742139730374631109, guid: 4f3ecc30f27e9394ea70eeda9bf3f060, type: 3}
       propertyPath: m_Size.y
-      value: 18.105751
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1742139730374631109, guid: 4f3ecc30f27e9394ea70eeda9bf3f060, type: 3}
       propertyPath: m_Offset.x
@@ -527,15 +532,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6645114111367394081, guid: 4f3ecc30f27e9394ea70eeda9bf3f060, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.4283094
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6645114111367394081, guid: 4f3ecc30f27e9394ea70eeda9bf3f060, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.745001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6645114111367394081, guid: 4f3ecc30f27e9394ea70eeda9bf3f060, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.42291275
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6645114111367394081, guid: 4f3ecc30f27e9394ea70eeda9bf3f060, type: 3}
       propertyPath: m_LocalRotation.w
