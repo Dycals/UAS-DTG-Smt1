@@ -12,9 +12,12 @@ public class WeaponController : MonoBehaviour
     float currentCooldown;
     public int pierce;
 
+    protected PlayerMovement pm;
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
+        pm = FindAnyObjectByType<PlayerMovement>();
         currentCooldown = cooldownDuration;
     }
 
